@@ -6,6 +6,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "ContainsDublicate",
+			"request": "launch",
+			"mainClass": "LeetCode.ContainsDublicate",
+			"projectName": "Java program_72b71285"
+		},
+		{
+			"type": "java",
 			"name": "Rev2",
 			"request": "launch",
 			"mainClass": "hw.Rev2",
