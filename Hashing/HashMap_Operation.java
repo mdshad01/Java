@@ -14,7 +14,7 @@ public class HashMap_Operation {
 
         System.out.println(map);
 
-        // Ger - O(1)
+        // Get - O(1)
         int pop = map.get("India");
         System.out.println(pop);
         System.out.println(map.get("Indonesia"));
