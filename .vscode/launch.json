@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StaticVariable",
+      "request": "launch",
+      "mainClass": "college.StaticVariable",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
+      "name": "Student",
+      "request": "launch",
+      "mainClass": "college.Student",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
+      "name": "Static",
+      "request": "launch",
+      "mainClass": "college.Static",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
+      "name": "Inheritance",
+      "request": "launch",
+      "mainClass": "college.Inheritance",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "college.Main",
