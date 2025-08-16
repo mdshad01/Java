@@ -1,4 +1,3 @@
-package college;
 
 // class Student {
 //     static String name;
@@ -20,14 +19,14 @@ public class Static {
 
     public static void main(String[] args) {
 
-        StaticVariable.name = "Shad";
-        StaticVariable.roll = 31;
-        StaticVariable.display();
+        // StaticVariable.name = "Shad";
+        // StaticVariable.roll = 31;
+        // StaticVariable.display();
 
-        StaticVariable s = new StaticVariable();
-        s.name = "bijay";
-        s.roll = 234;
-        s.display();
+        // StaticVariable s = new StaticVariable();
+        // s.name = "bijay";
+        // s.roll = 234;
+        // s.display();
 
         // sub(4, 2);
         // s.sum(4, 2);

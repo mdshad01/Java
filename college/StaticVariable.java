@@ -1,4 +1,3 @@
-package college;
 
 public class StaticVariable {
     String name;

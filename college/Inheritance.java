@@ -1,4 +1,3 @@
-package college;
 
 class Employee {
     String name;
