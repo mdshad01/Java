@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Array",
+      "request": "launch",
+      "mainClass": "Revision.Array",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "Revision.Main",
