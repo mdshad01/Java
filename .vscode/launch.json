@@ -6,6 +6,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ConstructorChainingDemo",
+      "request": "launch",
+      "mainClass": "LabManual.ConstructorChainingDemo",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
+      "name": "Dynamic_method",
+      "request": "launch",
+      "mainClass": "LabManual.Dynamic_method",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
+      "name": "Method_Overloading_Overriding",
+      "request": "launch",
+      "mainClass": "LabManual.Method_Overloading_Overriding",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
+      "name": "MatrixSymmetry",
+      "request": "launch",
+      "mainClass": "LabManual.MatrixSymmetry",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
+      "name": "Palindrome",
+      "request": "launch",
+      "mainClass": "LabManual.Palindrome",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
+      "name": "Palindorem",
+      "request": "launch",
+      "mainClass": "Palindorem",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
       "name": "Array",
       "request": "launch",
       "mainClass": "Revision.Array",
