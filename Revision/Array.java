@@ -90,10 +90,103 @@ public class Array {
         System.out.println();
     }
 
+    // Pairs of array
+    public static void pairsOfArray() {
+        int arr[] = { 2, 4, 6, 8, 10 };
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                System.out.print("(" + arr[i] + "," + arr[j] + ") ");
+            }
+            System.out.println();
+        }
+    }
+
+    // Print sub array
+    public static void printSubArray() {
+        int arr[] = { 2, 4, 6, 8, 10 };
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr.length; j++) {
+                for (int k = i; k <= j; k++) {
+                    System.err.print(" " + arr[k]);
+                }
+                System.out.print(", ");
+            }
+            System.out.println();
+        }
+    }
+
+    // Maximum sub array sum
+
+    public static void maxSubArraySum() {
+        int arr[] = { 1, 5, -7, 6, 2, -5 };
+        int max = Integer.MIN_VALUE;
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                int sum = 0;
+                for (int k = i; k <= j; k++) {
+                    sum += arr[k];
+                }
+                if (sum > max) {
+                    max = sum;
+                }
+            }
+        }
+        System.out.println("Maximum sub array aum = " + max);
+    }
+
+    // Perfix sub array
+    public static void prefixSubArraySum() {
+        int arr[] = { 1, 5, -7, 16, -2, -5 };
+        int max = Integer.MIN_VALUE, curr = 0;
+
+        int prefix[] = new int[arr.length];
+
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+            prefix[i] = sum;
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr.length; j++) {
+                curr = i == 0 ? prefix[j] : prefix[j] - prefix[i - 1];
+                if (curr > max) {
+                    max = curr;
+                }
+            }
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(prefix[i] + " ");
+        }
+
+        System.out.println();
+        System.out.println("Maximum sub array sum = " + max);
+
+        // int prefix2[] = new int[arr.length];
+
+        // prefix2[0] = arr[0];
+        // for (int i = 1; i < arr.length; i++) {
+        // prefix2[i] = prefix2[i - 1] + arr[i];
+        // }
+        // System.out.println();
+        // for (int i = 0; i < arr.length; i++) {
+        // System.out.print(prefix2[i] + " ");
+        // }
+
+    }
+
     public static void main(String[] args) {
         // linearSearch(7);
         // System.out.println(binarySearch(3));
         // findLargest();
-        revreseArray();
+        // revreseArray();
+        // pairsOfArray();
+        // printSubArray();
+        maxSubArraySum();
+        prefixSubArraySum();
     }
 }
