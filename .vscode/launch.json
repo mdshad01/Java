@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Maximum_Product_Subarray",
+      "request": "launch",
+      "mainClass": "LeetCode.Maximum_Product_Subarray",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
+      "name": "Kadanes_Maximum_Subarray",
+      "request": "launch",
+      "mainClass": "LeetCode.Kadanes_Maximum_Subarray",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
       "name": "ConstructorChainingDemo",
       "request": "launch",
       "mainClass": "LabManual.ConstructorChainingDemo",

@@ -179,6 +179,19 @@ public class Array {
 
     }
 
+    // O(n)
+    public static void kadanesAlgo() {
+        // int arr[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
+        int arr[] = { 1, 5, -7, 16, -2, -5 };
+        int max = arr[0];
+        int curr = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            curr = Math.max(arr[i], curr + arr[i]);
+            max = Math.max(curr, max);
+        }
+        System.out.println("Maxiumn sub array sum = " + max);
+    }
+
     public static void main(String[] args) {
         // linearSearch(7);
         // System.out.println(binarySearch(3));
@@ -186,7 +199,8 @@ public class Array {
         // revreseArray();
         // pairsOfArray();
         // printSubArray();
-        maxSubArraySum();
-        prefixSubArraySum();
+        // maxSubArraySum();
+        // prefixSubArraySum();
+        kadanesAlgo();
     }
 }
