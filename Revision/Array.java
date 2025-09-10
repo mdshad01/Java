@@ -1,6 +1,6 @@
 package Revision;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Array {
     // A function taking user input in an array and print output
@@ -192,6 +192,92 @@ public class Array {
         System.out.println("Maxiumn sub array sum = " + max);
     }
 
+    // Maximum sub array product
+
+    public static int maxProduct(int nums[]) {
+        int max = nums[0];
+        int min = nums[0];
+        int result = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] < 0) {
+                int temp = max;
+                max = min;
+                min = temp;
+            }
+            max = Math.max(nums[i], max * nums[i]);
+            min = Math.min(nums[i], min * nums[i]);
+            result = Math.max(result, max);
+        }
+        return result;
+    }
+
+    // M2
+
+    public static int subArrayMaxProduct(int nums[]) {
+        int max = Integer.MIN_VALUE;
+        int prefix = 1;
+        int suffix = 1;
+        int n = nums.length - 1;
+        for (int i = 0; i <= n; i++) {
+            if (prefix == 0)
+                prefix = 1;
+            if (suffix == 0)
+                suffix = 1;
+
+            prefix = prefix * nums[i];
+            suffix = suffix * nums[n - i];
+            max = Math.max(max, Math.max(prefix, suffix));
+
+        }
+        return max;
+    }
+
+    // Tarpping rainwater
+
+    public static void trappingWater() {
+        int height[] = { 4, 2, 0, 6, 3, 2, 5 };
+        int n = height.length;
+        int leftMax[] = new int[n];
+        int rightMax[] = new int[n];
+
+        leftMax[0] = height[0];
+        for (int i = 1; i < n; i++) {
+            leftMax[i] = Math.max(height[i], leftMax[i - 1]);
+        }
+        rightMax[n - 1] = height[n - 1];
+        for (int i = n - 2; i >= 0; i--) {
+            rightMax[i] = Math.max(height[i], rightMax[i + 1]);
+        }
+
+        int waterTrap = 0;
+        for (int i = 0; i < n; i++) {
+            int waterLevel = Math.min(leftMax[i], rightMax[i]);
+            waterTrap += waterLevel - height[i];
+        }
+        System.out.println("Total trapwater = " + waterTrap);
+    }
+
+    // M2 Using arraylist
+    public static void trappingWater2() {
+        int height[] = { 4, 2, 0, 6, 3, 2, 5 };
+        int n = height.length;
+        int lp = 0, rp = n - 1, lmax = 0, rmax = 0;
+        int trapwater = 0;
+        while (lp < rp) {
+            lmax = Math.max(height[lp], lmax);
+            rmax = Math.max(height[rp], rmax);
+
+            if (lmax < rmax) {
+                trapwater += lmax - height[lp];
+                lp++;
+            } else {
+                trapwater += rmax - height[rp];
+                rp--;
+            }
+        }
+        System.out.println("maximum trapping water = " + trapwater);
+    }
+
     public static void main(String[] args) {
         // linearSearch(7);
         // System.out.println(binarySearch(3));
@@ -201,6 +287,8 @@ public class Array {
         // printSubArray();
         // maxSubArraySum();
         // prefixSubArraySum();
-        kadanesAlgo();
+        // kadanesAlgo();
+        trappingWater();
+        trappingWater2();
     }
 }
