@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ThreeSum",
+      "request": "launch",
+      "mainClass": "LeetCode.ThreeSum",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
+      "name": "Container_With_Most_Water",
+      "request": "launch",
+      "mainClass": "LeetCode.Container_With_Most_Water",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
+      "name": "powxn",
+      "request": "launch",
+      "mainClass": "LeetCode.powxn",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
       "name": "Maximum_Product_Subarray",
       "request": "launch",
       "mainClass": "LeetCode.Maximum_Product_Subarray",
