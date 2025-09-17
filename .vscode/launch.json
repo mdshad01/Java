@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Search_a_2D_Matrix",
+      "request": "launch",
+      "mainClass": "LeetCode.Search_a_2D_Matrix",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
       "name": "TwoSum",
       "request": "launch",
       "mainClass": "LeetCode.TwoSum",
