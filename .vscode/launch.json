@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Next_Permutation",
+      "request": "launch",
+      "mainClass": "LeetCode.Next_Permutation",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
       "name": "Serach_In_2d_Matrix_II",
       "request": "launch",
       "mainClass": "LeetCode.Serach_In_2d_Matrix_II",
