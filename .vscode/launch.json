@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Subarray_Sum_Equals_K",
+      "request": "launch",
+      "mainClass": "LeetCode.Subarray_Sum_Equals_K",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
       "name": "Buy_And_Sell_Stock",
       "request": "launch",
       "mainClass": "LeetCode.Buy_And_Sell_Stock",
