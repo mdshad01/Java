@@ -11,5 +11,6 @@ public class printlargestString {
             }
         }
         System.out.println(largest);
+        System.out.println("abc".compareTo(largest) < 0);
     }
 }

@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MapRev",
+      "request": "launch",
+      "mainClass": "MapRev",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
+      "name": "MajorityElement",
+      "request": "launch",
+      "mainClass": "LeetCode.MajorityElement",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
+      "name": "New",
+      "request": "launch",
+      "mainClass": "New",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
+      "name": "ArangementBalls",
+      "request": "launch",
+      "mainClass": "BackTracking.ArangementBalls",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
       "name": "Subarray_Sum_Equals_K",
       "request": "launch",
       "mainClass": "LeetCode.Subarray_Sum_Equals_K",
