@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Move_Zeros",
+      "request": "launch",
+      "mainClass": "LeetCode.Move_Zeros",
+      "projectName": "Java program_72b71285"
+    },
+    {
+      "type": "java",
       "name": "MapRev",
       "request": "launch",
       "mainClass": "MapRev",

@@ -58,8 +58,9 @@ public class TwoSum {
         int target = 9;
         // System.out.println(twoSum(nums, target));
         int ans[] = twoSumOpt(nums, target);
-        for (int i = 0; i < ans.length; i++) {
-            System.out.print(ans[i] + " ");
-        }
+        // for (int i = 0; i < ans.length; i++) {
+        //     System.out.print(ans[i] + " ");
+        // }
+        System.err.println(5 %6);
     }
 }
